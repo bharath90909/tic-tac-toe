@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Play Tic Tac Toe</h1>
+    </header>
+    <section class="player-names">
+        <div class="players-container">
+            <div class="player-1">
+                <h2>Player 1</h2>
+                <h3 class="player-1-name">Player Name</h3>
+                <p class="player-symbol">X</p>
+                <button class="edit-btn btn-alt" data-playerid="1">Edit</button>
+            </div>
+            <div class="player-2">
+                <h2>Player 2</h2>
+                <h3 class="player-2-name">Player Name</h3>
+                <p class="player-symbol">O</p>
+                <button class="edit-btn btn-alt" data-playerid="2">Edit</button>
+            </div>
+        </div>
+    </section>
+   
+    <div class="start-new-game">
+        <button class="start-game-btn">Start New Game</button>
+    </div>
+    <section class="game-over">
+        <div class="display-winner">
+            <h2 class="winner-name"></h2>
+            <p>Click "Start New Game" to start a new game!</p>
+        </div>
+    </section>
+    <div class="active-player">
+        <p>It's your turn <span>Max</span></p>
+    </div>
+
+    <section class="playing-board">
+            <ol class="game-board">
+                <li data-col="1" data-row="1"> </li>
+                <li data-col="2" data-row="1"> </li>
+                <li data-col="3" data-row="1"> </li>
+
+                <li data-col="1" data-row="2"> </li>
+                <li data-col="2" data-row="2"> </li>
+                <li data-col="3" data-row="2"> </li>
+
+                <li data-col="1" data-row="3"> </li>
+                <li data-col="2" data-row="3"> </li>
+                <li data-col="3" data-row="3"> </li>
+            </ol>
+        </div>
+    </section>
+    <div class="back-drop">
+        <div class="modal">
+            <form >
+                <label for="">Enter Your Name</label>
+                <input type="text" class="input">
+                <p class="error-msg">Enter  Valid Name</p>
+                <div class="form-buttons">
+                    <button type="reset" class="cancel-btn btn-alt">cancel</button>
+                    <button type="submit" class="submit-btn">submit</button>
+                </div>
+               
+            </form>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
